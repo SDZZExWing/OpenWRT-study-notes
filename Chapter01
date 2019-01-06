@@ -12,3 +12,31 @@
 
 ## 安装Ubuntu  
 在虚拟机中安装Ubuntu
+
+## 配置OpenWRT开发环境  
+
+### 更新Ubuntu系统  
+```
+sudo apt-get update
+```
+
+### 安装开发环境  
+```
+sudo apt-get install gcc g++ binutils patch bzip2 flex bison make autoconf gettext texinfo unzip sharutils libncurses5-dev ncurses-term zlib1g-dev gawk asciidoc libz-dev git-core uuid-dev libacl1-dev liblzo2-dev pkg-config libc6-dev curl libxml-parser-perl ocaml-nox
+```
+
+### 安装源代码  
+详细信息
+[wiki...开发者指南》LEDE源代码](https://openwrt.org/zh/docs/guide-developer/source-code/start)  
+执行以下命令  
+```
+git clone https://git.openwrt.org/openwrt/openwrt.git
+```
+
+### 编译系统  
+```
+make V=99
+```
+
+## OpenWRT界面  
+可以看到OpenWRT界面
